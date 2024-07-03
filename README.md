@@ -68,7 +68,7 @@ Go to each subdeck and select all cards, change note type to the 'Jalup' note we
 
 ### Step 7: Edit Card Template
 
-Edit the Front, Back, and CSS Styling of the card. Just overwrite what is there with copy and paste from my templates.
+Edit the Front, Back, and CSS Styling of the card. Just overwrite what is there with copy and paste from my templates in this repository.
 
 ### Step 8: Export Jalup Deck
 
