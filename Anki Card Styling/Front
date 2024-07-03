@@ -1,1 +1,6 @@
-Add front here
+<div class="box">
+
+  <div id="card-id">{{ID}}</div>
+   <h1>{{Sentence}}</h1>
+
+</div>
