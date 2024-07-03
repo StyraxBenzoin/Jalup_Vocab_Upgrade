@@ -1,7 +1,9 @@
 **Japanese Level Up Maximum Package Vocabulary Upgrade**
 =============================================
 
-### Introduction
+*Disclaimer: This is still a work in progress and needs testing.*
+
+# Introduction
 
 [Japanese Level Up (Jalup)](https://web.archive.org/web/20240409124146/https://japaneselevelup.com/) is a Japanese language learning system created by it's founder Adam Shapiro (Adshap). 
 
@@ -24,7 +26,9 @@ Here's an example screenshot in Ankidroid card browser:
 
 # Prerequisites 
 
-This script is written in Python and therefore must be installed to run. Here is a super short bullet point guide on how to install Python for Linux and Windows:
+### Installing Python
+
+This script is written in Python 3.8 and therefore must be installed to run. Here is a super short bullet point guide on how to install Python for Linux and Windows:
 
 **Linux:**
 
@@ -40,6 +44,35 @@ This script is written in Python and therefore must be installed to run. Here is
 * Run the installer and follow the prompts to install Python
 * Make sure to select the option to add Python to your PATH during installation
 * Verify installation by opening a new Command Prompt or PowerShell and typing `python --version`
+
+### Making a virtual environment
+
+I recommend using `pyenv` to manage Python versions and for making a virtual environment for your projects. Here's a super short guide to installing and using pyenv to create a virtual environment in Linux or Windows:
+
+1. **Installation**:
+   - **Linux**:
+     - Install dependencies: `sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev`
+     - Clone pyenv: `git clone https://github.com/pyenv/pyenv.git ~/.pyenv`
+     - Add pyenv to your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`): 
+       ```
+       echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+       echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+       echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+       ```
+     - Restart your shell or run `source ~/.bashrc` to apply the changes.
+
+   - **Windows**:
+     - Install pyenv-win: Follow the instructions on the pyenv-win GitHub page: https://github.com/pyenv-win/pyenv-win
+
+2. **Usage**:
+   - **Create a virtual environment**:
+     - List available Python versions: `pyenv install --list`
+     - Install a specific Python version: `pyenv install <version>`
+     - Set a local Python version for a directory: `pyenv local <version>`
+     - Create a virtual environment: `pyenv virtualenv <version> <env_name>`
+     - Activate the virtual environment: `pyenv activate <env_name>`
+
+That's it! You now have a virtual environment set up using pyenv in Linux or Windows.
 
 # Upgrade Steps
 
@@ -100,23 +133,23 @@ Unfortunately, despite all that work, the exported file is not in deck order (an
 
 ### Step 10: Prepare Python Script
 
-Clone this repo with in command prompt or terminal using `git clone https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade.git`, then `cd Jalup_Vocab_Upgrade` to navigate inside the directory. Use a file explorer to move your `.tsv` file into the same folder as this python script. Open `Jalup_Vocab_Upgrade.py` in a text editor and change the string of `input_file` to match your filename. e.g. `input_file = 'myfile.tsv'`
+Clone this repo with in command prompt or terminal using `git clone https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade.git`, then `cd Jalup_Vocab_Upgrade` to navigate inside the directory. This is when you probably want to use a virtual environment with pyenv. Use a file explorer to move your `.tsv` file into the same folder as this python script. Open `Jalup_Vocab_Upgrade.py` in a text editor and change the string of `input_file` to match your filename. e.g. `input_file = 'myfile.tsv'`
 
 ### Step 11: Install Requirements
+
+Activate your virtual environment and install the `requirements.txt`
 
 **Installing Dependencies with `pip`**
 
 **Linux**
 
-* Open a terminal and navigate to the directory where `requirements.txt` file is located
+* In the terminal, navigate to the directory where `requirements.txt` file is located
 * Run the following command: `pip install -r requirements.txt`
 
 **Windows**
 
-* Open a command prompt and navigate to the directory where `requirements.txt` file is located
+* Open a command prompt activate your virtual environment and navigate to the directory where `requirements.txt` file is located
 * Run the following command: `pip install -r requirements.txt`
-
-**Note:** Make sure you have Python and `pip` installed on your system before running this command.
 
 ### Step 12: Run Python Script
 
@@ -126,11 +159,9 @@ Run the `Jalup_Vocab_Upgrade.py`. After a minute or so, a new file `myfile_Vocab
 
 **Linux**
 * `python Jalup_Vocab_Upgrade.py` (from the terminal)
-* `./Jalup_Vocab_Upgrade.py` (if the file is executable and in the current directory)
 
 **Windows**
 * `Jalup_Vocab_Upgrade.py` (from the command prompt)
-* Double-click the `Jalup_Vocab_Upgrade.py` file (if Python is associated with `.py` files)
 
 ### Step 13: Import Upgraded File
 
