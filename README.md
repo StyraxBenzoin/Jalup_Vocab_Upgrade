@@ -26,7 +26,9 @@ This script is written in Python and therefore must be installed to run. Here is
 * Make sure to select the option to add Python to your PATH during installation
 * Verify installation by opening a new Command Prompt or PowerShell and typing `python --version`
 
-### There are some important steps that must first be carried out manually. All of these steps are critical. Follow exactly.
+# Upgrade Steps
+
+There are some important steps that must first be carried out manually. All of these steps are critical. Follow exactly.
 
 ### Step 0: Backup
 
