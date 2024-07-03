@@ -3,7 +3,19 @@
 
 ### Introduction
 
-This script is to upgrade your Japanese Level Up maximum package to include a vocabulary section on your cards. The upgrade allows you to keep all your learning progress if you have already started. 
+[Japanese Level Up (Jalup)](https://web.archive.org/web/20240409124146/https://japaneselevelup.com/) is a Japanese language learning system created by it's founder Adam Shapiro (Adshap). 
+
+Jalup flashcards for Anki feature perfect i(nfo)+1 material, native audio, and bilingual to monolingual (Japanese in Japanese) transitioning.
+
+Although the website is sadly gone, there is a community that still lives on! Join me `@Benzene` in the Jalup discord group [here](https://discord.gg/pCy8WPU)!
+
+The Jalup Anki decks are still available to purchace directly from Adam. Links are in the `#jalup-deck-info` channel of the JALUP Adventurers Discord.
+
+Jalup has partnered with [Nihongo Lessons](https://lessons.nihongo-app.com/) as it's new home. It's a neat app with a 'card linking' feature which makes it easy to look up words used in the flashcard, linking back to the card in which it was originally seen. Unfortunately, Nihongo Lessons is an iOS app only, so us PC/Android users have been severely missing out on this powerful tool.
+
+This script aims to solve that problem by upgrading your Japanese Level Up maximum package to include a vocabulary section on your cards. There's also some nice card styling too (light and dark mode). The upgrade allows you to keep all your learning progress even if you have already started. 
+
+Here's an example screenshot in Ankidroid card browser:
 
 <p align="center">
   <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/acf86927-fc8f-411e-b9e1-0ddb2d9ec50e" width="250" alt="Jalup vocabulary upgrade Ankidroid screenshot">
@@ -31,7 +43,7 @@ This script is written in Python and therefore must be installed to run. Here is
 
 # Upgrade Steps
 
-There are some important steps that must first be carried out manually. All of these steps are critical. Follow exactly.
+Unfortunately, due to the nature in which the Anki decks are supplied (inconsistencies and non-standardised formatting), it's extremely difficult to automate the entire process. There are some important steps that must be carried out manually. All of these steps are critical. Follow exactly.
 
 ### Step 0: Backup
 
@@ -39,7 +51,9 @@ There are some important steps that must first be carried out manually. All of t
 
 ### Step 1: Import Jalup Files
 
-New users: Import all the Jalup `.apkg` files into Anki. This will import all the media too. Existing users: Skip this step.
+New users: Import all the Jalup `.apkg` files into Anki. This will import all the media too. 
+
+Existing users: Skip this step.
 
 ### Step 2: Create Jalup Deck
 
