@@ -57,7 +57,7 @@ Existing users: Skip this step.
 
 ### Step 2: Create Jalup Deck
 
-Create a deck called Jalup with subdecks in ascending order. E.g. 'Jalup::01 Beginner', 'Jalup::02 Intermediate', 'Jalup::03 Intermediate', etc.
+Create a deck called 'Jalup' with the sentence subdecks in ascending order. E.g. 'Jalup::01 Beginner', 'Jalup::02 Intermediate', 'Jalup::03 Intermediate', etc. You will have a total of 7 subdecks. Do not include Kana Conqueror or Kanji Kingdom, etc.
 
 ### Step 3: Move Cards
 
