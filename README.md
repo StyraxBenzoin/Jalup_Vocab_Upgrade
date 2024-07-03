@@ -100,7 +100,7 @@ Unfortunately, despite all that work, the exported file is not in deck order (an
 
 ### Step 10: Prepare Python Script
 
-Place your sorted and saved `.tsv` file in the same folder as this python script. Open `Jalup_Vocab_Upgrade.py` in a text editor and change the string of `input_file` to match your filename. e.g. `input_file = 'myfile.tsv'`
+Clone this repo with in command prompt or terminal use `git clone https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade.git` to clone the repository, then `cd Jalup_Vocab_Upgrade`. Save your sorted and saved `.tsv` file in the same folder as this python script. Open `Jalup_Vocab_Upgrade.py` in a text editor and change the string of `input_file` to match your filename. e.g. `input_file = 'myfile.tsv'`
 
 ### Step 11: Install Requirements
 
@@ -108,19 +108,19 @@ Place your sorted and saved `.tsv` file in the same folder as this python script
 
 **Linux**
 
-* Open a terminal and navigate to the directory where your `requirements.txt` file is located
+* Open a terminal and navigate to the directory where `requirements.txt` file is located
 * Run the following command: `pip install -r requirements.txt`
 
 **Windows**
 
-* Open a command prompt and navigate to the directory where your `requirements.txt` file is located
+* Open a command prompt and navigate to the directory where `requirements.txt` file is located
 * Run the following command: `pip install -r requirements.txt`
 
 **Note:** Make sure you have Python and `pip` installed on your system before running this command.
 
 ### Step 12: Run Python Script
 
-Run `Jalup_Vocab_Upgrade.py`. After a minute or so, a new file `myfile_Vocab_Upgrade.txt` will be written.
+Run the `Jalup_Vocab_Upgrade.py`. After a minute or so, a new file `myfile_Vocab_Upgrade.txt` will be written.
 
 **Running a `.py` file**
 
