@@ -100,7 +100,7 @@ Unfortunately, despite all that work, the exported file is not in deck order (an
 
 ### Step 10: Prepare Python Script
 
-Clone this repo with in command prompt or terminal use `git clone https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade.git` to clone the repository, then `cd Jalup_Vocab_Upgrade`. Save your sorted and saved `.tsv` file in the same folder as this python script. Open `Jalup_Vocab_Upgrade.py` in a text editor and change the string of `input_file` to match your filename. e.g. `input_file = 'myfile.tsv'`
+Clone this repo with in command prompt or terminal using `git clone https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade.git`, then `cd Jalup_Vocab_Upgrade` to navigate inside the directory. Use a file explorer to move your `.tsv` file into the same folder as this python script. Open `Jalup_Vocab_Upgrade.py` in a text editor and change the string of `input_file` to match your filename. e.g. `input_file = 'myfile.tsv'`
 
 ### Step 11: Install Requirements
 
