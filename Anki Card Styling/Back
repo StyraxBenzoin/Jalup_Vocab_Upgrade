@@ -1,1 +1,32 @@
-Add Back Here
+<div class="box">
+
+  <h1>{{furigana:Sentence}}</h1>
+
+	<div class="divider"></div>
+
+	<p>
+ 		{{Explanation}}
+	</p>
+
+	{{#Notes}}
+  	<p><div class="note">{{Notes}}</div></p>
+	{{/Notes}}
+
+	{{Media}}
+
+</div>
+
+
+<br />
+
+{{#Vocabulary}}
+	<div class="vocabulary box">
+  
+ 	 <h2>Vocabulary</h2>
+
+  	<div class="divider"></div>
+
+ 	 <p>{{furigana:Vocabulary}}</p>
+
+	</div>
+{{/Vocabulary}}
