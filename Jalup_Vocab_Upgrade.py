@@ -55,7 +55,7 @@ def parse_japanese_text(text):
                     "だ",
                     "いる",
                     "ある",
-                ]:  # "います", "あります", '食べる', 'お母さん', '彼'
+                ]:
                     unique_words.append(lemma)
                     seen.add(lemma)
     return unique_words
