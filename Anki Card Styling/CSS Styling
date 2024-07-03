@@ -33,7 +33,6 @@ h2 {
 
 .nightMode .box {
   background: #1c1b23 ;
-  /*box-shadow: 0 0 15px 0 #83808f;*/
 }
 
 #card-id {
