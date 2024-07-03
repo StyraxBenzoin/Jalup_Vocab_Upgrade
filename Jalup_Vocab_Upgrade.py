@@ -11,7 +11,7 @@ import ipadic
 # Read the guide at https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade
 
 # Load the file. EDIT TO MATCH YOUR FILENAME.
-input_file = "Sorted_Jalup_Max_All_Decks.tsv"
+input_file = "myfile.tsv"
 
 # Make a dataframe from the input file. Skip the first 3 rows as they are tags for Anki. We will add the tags later when writing the output.
 df = pd.read_csv(input_file, sep="\t", skiprows=(0, 1, 2), header=None)
