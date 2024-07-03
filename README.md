@@ -5,7 +5,10 @@
 
 This script is to upgrade your Japanese Level Up maximum package to include a vocabulary section on your cards. The upgrade allows you to keep all your learning progress if you have already started. 
 
-To Do: Add example image of card with vocab.
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/acf86927-fc8f-411e-b9e1-0ddb2d9ec50e" width="250" alt="Jalup vocabulary upgrade Ankidroid screenshot">
+</p>
+
 
 # Prerequisites 
 
@@ -48,7 +51,14 @@ Move your cards to their corresponding decks.
 
 ### Step 4: Create Jalup Note Type
 
-Make a new note type called 'Jalup' and make the following fields. Order is critical! [Sentence, Explanation, Note, Media, Sentence Reading, Vocabulary]
+Make a new note type called 'Jalup' and make the following fields. Order is critical! 
+
+1. Sentence
+2. Explanation
+3. Note
+4. Media
+5. Sentence Reading
+6. Vocabulary
 
 ### Step 5: Change Note Type
 
@@ -62,8 +72,13 @@ Edit the Front, Back, and CSS Styling of the card. Just overwrite what is there 
 
 ### Step 8: Export Jalup Deck
 
-Export your Jalup Anki deck. Export with options 'Notes in plain text', Include: Select your Jalup parent deck. (Check that subdecks MUST be named sequentially; 01 Beginner, 02 Intermediate, etc.). 
-Check 'Include HTML and media references' and 'Include deck name'. Everything else left unchecked.
+Export with the following options:
+* **Notes in plain text**
+* **Include**: Select your Jalup parent deck
+  - Note: Subdecks MUST be named sequentially (e.g. 01 Beginner, 02 Intermediate, etc.)
+* **Include HTML and media references**
+* **Include deck name**
+* Leave all other options unchecked
 
 ### Step 9: Sort Exported File
 
@@ -76,14 +91,13 @@ Place your sorted and saved `.tsv` file in the same folder as this python script
 ### Step 11: Install Requirements
 
 **Installing Dependencies with `pip`**
-=====================================
 
-### Linux
+**Linux**
 
 * Open a terminal and navigate to the directory where your `requirements.txt` file is located
 * Run the following command: `pip install -r requirements.txt`
 
-### Windows
+**Windows**
 
 * Open a command prompt and navigate to the directory where your `requirements.txt` file is located
 * Run the following command: `pip install -r requirements.txt`
@@ -94,20 +108,31 @@ Place your sorted and saved `.tsv` file in the same folder as this python script
 
 Run `Jalup_Vocab_Upgrade.py`. After a minute or so, a new file `myfile_Vocab_Upgrade.txt` will be written.
 
-### Running a `.py` file
+**Running a `.py` file**
 
-#### Linux
+**Linux**
 * `python Jalup_Vocab_Upgrade.py` (from the terminal)
 * `./Jalup_Vocab_Upgrade.py` (if the file is executable and in the current directory)
 
-#### Windows
+**Windows**
 * `Jalup_Vocab_Upgrade.py` (from the command prompt)
 * Double-click the `Jalup_Vocab_Upgrade.py` file (if Python is associated with `.py` files)
 
 ### Step 13: Import Upgraded File
 
-In Anki, import text file, choose options; Field separator: Tab. Allow HTML in fields. Notetype: Jalup. Existing notes: Update. Match Scope: Notetype and deck. Double check the field mapping is correct.
+In Anki, import text file.
+
+**Anki Import Options**
+
+1. **Field separator**: Tab
+2. **Allow HTML in fields**: Yes
+3. **Notetype**: Jalup
+4. **Existing notes**: Update
+5. **Match Scope**: Notetype and deck
+6. **Field mapping**: Double check that it is correct
+
+Click Import.
 
 ### Step 14: Congratulations!
 
-Click Import. Congratulations! You should now have a fancy vocab upgrade for your Jalup decks. If anything went wrong, you can restore from backup. You DID backup, right?
+Congratulations! You should now have a fancy vocab upgrade for your Jalup decks. If anything went wrong, you can restore from backup. You DID backup, right?
