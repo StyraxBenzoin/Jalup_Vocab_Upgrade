@@ -215,6 +215,51 @@ Click Import.
 
 Congratulations! You should now have a fancy vocab upgrade for your Jalup decks. If anything went wrong, you can restore from backup. You DID backup, right?
 
+# How does it work?
+
+Mecab-python3 is a Python wrapper for the MeCab library, a popular Japanese tokenization and morphological analysis tool. It works by breaking down Japanese text into individual words or morphemes, and then analyzing each morpheme's grammatical features, such as part of speech, inflection, and conjugation.
+
+Here's an example of how mecab-python3 would parse the sentence: 映画の始まりは超面白かった！
+
+```
+import MeCab
+
+mecab = MeCab.Tagger()
+sentence = "映画の始まりは超面白かった！"
+parse_result = mecab.parse(sentence)
+
+print(parse_result)
+```
+
+The output would be:
+```
+映画	エーガ	エイガ	映画	名詞-普通名詞-一般			0,1
+の	ノ	ノ	の	助詞-格助詞			
+始まり	ハジマリ	ハジマリ	始まり	名詞-普通名詞-一般			0
+は	ワ	ハ	は	助詞-係助詞			
+超	チョー	チョウ	超	接頭辞			
+面白かっ	オモシロカッ	オモシロイ	面白い	形容詞-一般	形容詞	連用形-促音便	4
+た	タ	タ	た	助動詞	助動詞-タ	終止形-一般	
+！			！	補助記号-句点			
+EOS
+```
+The output of mecab-python3 is a tab-separated table, where each line represents a morpheme, and the columns represent the following information:
+
+1. The original text of the morpheme
+2. The reading of the morpheme in katakana
+3. The reading of the morpheme in kanji (if applicable)
+4. The base form of the morpheme (e.g., 映画, 面白い)
+5. The part of speech and grammatical features (e.g., 名詞-普通名詞-一般 for a general noun)
+6. Additional information about the morpheme (e.g., 0,1 for the position of the morpheme in the sentence)
+
+This output shows that mecab-python3 has successfully broken down the sentence into individual morphemes and analyzed their grammatical features.
+
+The script applies this method to all the text in the card and generates a list of unique words from the text in their base form. It then matches those words to cards that have appeared before it where the word is defined, then takes that definition and example sentence and appends it to a new vocabulary field with some HTML formatting that is handled by Anki.
+
+# Limitations
+
+While this method is not foolproof, it has proven to be highly effective in most cases. Its accuracy is largely dependent on MeCab's text parsing and the presentation of definitions on the cards. Fortunately, from the intermediate deck onward, definitions are provided in their base dictionary form, making matches relatively straightforward. However, a significant number of cards in the beginner deck feature definitions that are not in their base form, which, combined with potential discrepancies in MeCab's parsing of certain grammar points, can lead to some omissions. Despite these limitations, the method has demonstrated sufficient accuracy for the majority of cases. Considering the hundreds of hours invested in card linking for the original Jalup app, this approach represents a significant improvement.
+
 # Credits
 
 - [MeCab](http://taku910.github.io/mecab/)
