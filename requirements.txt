@@ -1,4 +1,3 @@
 ipadic==1.0.0
-mecab==0.996.3
 mecab-python3==1.0.9
 pandas>=2.0.3
