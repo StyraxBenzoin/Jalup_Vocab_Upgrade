@@ -263,3 +263,4 @@ While this method is not foolproof, it has proven to be highly effective in most
 - [MeCab](http://taku910.github.io/mecab/)
 - [mecab-python3](https://github.com/SamuraiT/mecab-python3)
 - [ipadic](https://pypi.org/project/ipadic) (I know it's outdated but it was reliable. The other dictionary option `Unidic` kept returning dictionary forms in kanji for words that usually only appear in kana, e.g. ゴミ returns as 塵.)
+- Jalup Beginner and Intermediate 'Ultimate Version Update' (no longer available) by Adam which formed the basis of the card styling.
