@@ -1,8 +1,6 @@
 **Japanese Level Up Maximum Package Vocabulary Upgrade**
 =============================================
 
-*Disclaimer: This is still a work in progress and needs testing.*
-
 # Introduction
 
 [Japanese Level Up (Jalup)](https://web.archive.org/web/20240409124146/https://japaneselevelup.com/) is a Japanese language learning system created by it's founder Adam Shapiro (Adshap). 
@@ -20,15 +18,14 @@ This script aims to solve that problem by upgrading your Japanese Level Up maxim
 Here's an example screenshot in Ankidroid card browser:
 
 <p align="center">
-  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/acf86927-fc8f-411e-b9e1-0ddb2d9ec50e" width="250" alt="Jalup vocabulary upgrade Ankidroid screenshot">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/acf86927-fc8f-411e-b9e1-0ddb2d9ec50e" width=30% alt="Jalup vocabulary upgrade Ankidroid screenshot">
 </p>
-
 
 # Prerequisites 
 
 ### Installing Python
 
-This script is written in Python 3.8 and therefore must be installed to run. Here is a super short bullet point guide on how to install Python for Linux and Windows:
+This script is written in Python and therefore must be installed to run. The version of Python should work with any version `3.8` or greater. I have tested it with `3.8.19` and `3.12.4`. Here is a super short bullet point guide on how to install Python for Linux and Windows:
 
 **Linux:**
 
@@ -84,13 +81,17 @@ Unfortunately, due to the nature in which the Anki decks are supplied (inconsist
 
 ### Step 1: Import Jalup Files
 
-New users: Import all the Jalup `.apkg` files into Anki. This will import all the media too. 
+Existing users: Skip this step if you've already imported and are using Jalup.
 
-Existing users: Skip this step.
+New users: Import all the Jalup `.apkg` files into Anki. This will import all the media too. 
 
 ### Step 2: Create Jalup Deck
 
 Create a deck called 'Jalup' with the sentence subdecks in ascending order. E.g. 'Jalup::01 Beginner', 'Jalup::02 Intermediate', 'Jalup::03 Intermediate', etc. You will have a total of 7 subdecks. Do not include Kana Conqueror or Kanji Kingdom, etc.
+
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/1ee330d5-1cd3-4b49-bf1e-9c59b7890251" width=50% alt="Deck naming">
+</p>
 
 ### Step 3: Move Cards
 
@@ -107,15 +108,27 @@ Make a new note type called 'Jalup' and make the following fields. Order is crit
 5. Sentence Reading
 6. Vocabulary
 
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/7da816be-d6aa-4551-b570-62f17f7356ae" width=50% alt="Create note type">
+</p>
+
 ### Step 5: Change Note Type
 
 Go to each subdeck and select all cards, change note type to the 'Jalup' note we just made. Take care to map the correct fields.
 
 **IMPORTANT**: Take extra care when changing note type of the master deck. Some cards (I believe it's the first 250 cards, stage 1) use a different note type where there is no 'Notes' field like the other cards, so select these separately when changing note type and pay attention to the field mapping.
 
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/1d2b2556-4d11-4274-b0db-cd66caf4c53e" width=50% alt="Change note type">
+</p>
+
 ### Step 7: Edit Card Template
 
 Edit the Front, Back, and CSS Styling of the card. Just overwrite what is there with copy and paste from my templates in this repository.
+
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/de933e7c-1088-4cef-b132-13a40c2dc087" width=50% alt="Card styling">
+</p>
 
 ### Step 8: Export Jalup Deck
 
@@ -127,9 +140,18 @@ Export with the following options:
 * **Include deck name**
 * Leave all other options unchecked
 
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/dba46b60-6e40-4aae-88c1-eb70f9a0273a" width=50% alt="Deck export">
+</p>
+
 ### Step 9: Sort Exported File
 
 Unfortunately, despite all that work, the exported file is not in deck order (and for some reason nothing I do in pandas will sort it the way we need!). Open the file, select all, copy, paste into Google sheets, highlight column A, sort column A to Z ascending, save/download file as `.tsv` (tab separated values)
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/3f98f3c4-c605-48e7-b788-8a80d7afb1ce" style="width: 45%;" alt="Sort by column A">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/d4a78777-6c69-4d2a-9d97-78f2c87e760a" style="width: 45%;" alt="Download as .tsv">
+</div>
 
 ### Step 10: Prepare Python Script
 
@@ -176,8 +198,16 @@ In Anki, import text file.
 5. **Match Scope**: Notetype and deck
 6. **Field mapping**: Double check that it is correct
 
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/193ad7df-0159-4c78-a8fe-f4d09b5a6938" width=50% alt="Import to Anki">
+</p>
+
 Click Import.
 
 ### Step 14: Congratulations!
+
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/5a2e14a0-96c2-4f3d-a6fc-953993d52d07" width=50% alt="Import to Anki">
+</p>
 
 Congratulations! You should now have a fancy vocab upgrade for your Jalup decks. If anything went wrong, you can restore from backup. You DID backup, right?
