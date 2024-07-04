@@ -209,5 +209,8 @@ Click Import.
 <p align="center">
   <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/5a2e14a0-96c2-4f3d-a6fc-953993d52d07" width=50% alt="Import to Anki">
 </p>
+<p align="center">
+  <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/61da74c0-a7c5-4a3b-9971-18a1109bf966" width=50% alt="Preview card">
+</p>
 
 Congratulations! You should now have a fancy vocab upgrade for your Jalup decks. If anything went wrong, you can restore from backup. You DID backup, right?
