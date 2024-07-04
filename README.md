@@ -7,7 +7,7 @@
 
 Jalup flashcards for Anki feature perfect i(nfo)+1 material reviewed for correctness by native speakers, native audio, and bilingual to monolingual (Japanese in Japanese) transitioning.
 
-The website ran for 11 years from 2011 to 2022 before the announcement that Adam wanted to focus more on family life, and finally closed down in 2024.  Although the website is sadly gone, there is a community that still lives on! Join me `@Benzene` in the Jalup discord group [here](https://discord.gg/pCy8WPU)!
+The website ran for 11 years from 2011 to 2022 before the announcement that Adam wanted to focus more on family life, and finally closed down in 2024. It was a fantastic resource with a wealth of information, guides, and motivational articles. Although the website is sadly gone, there is a community that still lives on! Join me `@Benzene` in the Jalup discord group [here](https://discord.gg/pCy8WPU)!
 
 The Jalup Anki decks are still available to purchace directly from Adam. Links are in the `#jalup-deck-info` channel of the JALUP Adventurers Discord.
 
@@ -217,7 +217,7 @@ Congratulations! You should now have a fancy vocab upgrade for your Jalup decks.
 
 # How does it work?
 
-Mecab-python3 is a Python wrapper for the MeCab library, a popular Japanese tokenization and morphological analysis tool. It works by breaking down Japanese text into individual words or morphemes, and then analyzing each morpheme's grammatical features, such as part of speech, inflection, and conjugation.
+Mecab-python3 is a Python wrapper for the MeCab library, a popular Japanese tokenization and morphological analysis tool. It works by breaking down Japanese text into individual words or morphemes, and then analyzing each morpheme's grammatical features, such as part of speech, reading, and base form.
 
 Here's an example of how mecab-python3 would parse the sentence: 映画の始まりは超面白かった！
 
@@ -251,8 +251,6 @@ The output of mecab-python3 is a tab-separated table, where each line represents
 4. The base form of the morpheme (e.g., 映画, 面白い)
 5. The part of speech and grammatical features (e.g., 名詞-普通名詞-一般 for a general noun)
 6. Additional information about the morpheme (e.g., 0,1 for the position of the morpheme in the sentence)
-
-This output shows that mecab-python3 has successfully broken down the sentence into individual morphemes and analyzed their grammatical features.
 
 The script applies this method to all the text in the card and generates a list of unique words from the text in their base form. It then matches those words to cards that have appeared before it where the word is defined, then takes that definition and example sentence and appends it to a new vocabulary field with some HTML formatting that is handled by Anki.
 
