@@ -3,15 +3,15 @@
 
 # Introduction
 
-[Japanese Level Up (Jalup)](https://web.archive.org/web/20240409124146/https://japaneselevelup.com/) is a Japanese language learning system created by it's founder Adam Shapiro (Adshap). 
+[Japanese Level Up (Jalup)](https://web.archive.org/web/20240409124146/https://japaneselevelup.com/) is a Japanese language learning blog and system created by it's founder Adam Shapiro (Adshap). 
 
-Jalup flashcards for Anki feature perfect i(nfo)+1 material, native audio, and bilingual to monolingual (Japanese in Japanese) transitioning.
+Jalup flashcards for Anki feature perfect i(nfo)+1 material reviewed for correctness by native speakers, native audio, and bilingual to monolingual (Japanese in Japanese) transitioning.
 
-Although the website is sadly gone, there is a community that still lives on! Join me `@Benzene` in the Jalup discord group [here](https://discord.gg/pCy8WPU)!
+The website ran for 11 years from 2011 to 2022 before the announcement that Adam wanted to focus more on family life, and finally closed down in 2024.  Although the website is sadly gone, there is a community that still lives on! Join me `@Benzene` in the Jalup discord group [here](https://discord.gg/pCy8WPU)!
 
 The Jalup Anki decks are still available to purchace directly from Adam. Links are in the `#jalup-deck-info` channel of the JALUP Adventurers Discord.
 
-Jalup has partnered with [Nihongo Lessons](https://lessons.nihongo-app.com/) as it's new home. It's a neat app with a 'card linking' feature which makes it easy to look up words used in the flashcard, linking back to the card in which it was originally seen. Unfortunately, Nihongo Lessons is an iOS app only, so us PC/Android users have been severely missing out on this powerful tool.
+Jalup has partnered with [Nihongo Lessons](https://lessons.nihongo-app.com/) which have a licensed the use of the Jalup decks so that it may continue. It's a neat app with a 'card linking' feature which makes it easy to look up words used in the flashcard, linking back to the card in which it was originally seen. Unfortunately, Nihongo Lessons is an iOS app only, so us PC/Android users have been severely missing out on this powerful tool.
 
 This script aims to solve that problem by upgrading your Japanese Level Up maximum package to include a vocabulary section on your cards. There's also some nice card styling too (light and dark mode). The upgrade allows you to keep all your learning progress even if you have already started. 
 
@@ -214,3 +214,9 @@ Click Import.
 </p>
 
 Congratulations! You should now have a fancy vocab upgrade for your Jalup decks. If anything went wrong, you can restore from backup. You DID backup, right?
+
+# Credits
+
+- [MeCab](http://taku910.github.io/mecab/)
+- [mecab-python3](https://github.com/SamuraiT/mecab-python3)
+- [ipadic](https://pypi.org/project/ipadic) (I know it's outdated but it was reliable. The other dictionary option `Unidic` kept returning dictionary forms in kanji for words that usually only appear in kana, e.g. ゴミ returns as 塵.)
