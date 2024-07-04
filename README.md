@@ -252,7 +252,7 @@ The output of mecab-python3 is a tab-separated table, where each line represents
 5. The part of speech and grammatical features (e.g., 名詞-普通名詞-一般 for a general noun)
 6. Additional information about the morpheme (e.g., 0,1 for the position of the morpheme in the sentence)
 
-The script applies this method to all the text in the card and generates a list of unique words from the text in their base form. It then matches those words to cards that have appeared before it where the word is defined, then takes that definition and example sentence and appends it to a new vocabulary field with some HTML formatting that is handled by Anki.
+The script applies this method to all the text in the card and generates a list of unique words in their base form. It then matches those words to cards where it has been defined previously, then takes that definition and example sentence, and appends it to a new vocabulary field with some HTML formatting that is handled by Anki.
 
 # Limitations
 
