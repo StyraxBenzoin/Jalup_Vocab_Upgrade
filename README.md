@@ -11,7 +11,7 @@ The website ran for 11 years from 2011 to 2022 before the announcement that Adam
 
 The Jalup Anki decks are still available to purchace directly from Adam. Links are in the `#jalup-deck-info` channel of the JALUP Adventurers Discord.
 
-Jalup has partnered with [Nihongo Lessons](https://lessons.nihongo-app.com/) which have a licensed the use of the Jalup decks so that it may continue. It's a neat app with a 'card linking' feature which makes it easy to look up words used in the flashcard, linking back to the card in which it was originally seen. Unfortunately, Nihongo Lessons is an iOS app only, so us PC/Android users have been severely missing out on this powerful tool.
+Jalup has partnered with Chris Vasselli of [Nihongo Lessons](https://lessons.nihongo-app.com/) to license the use of the Jalup decks so that it may continue. It's a neat app with a 'card linking' feature which makes it easy to look up words used in the flashcard, linking back to the card in which it was originally seen. Unfortunately, Nihongo Lessons is an iOS app only, so us PC/Android users have been severely missing out on this powerful tool.
 
 This script aims to solve that problem by upgrading your Japanese Level Up maximum package to include a vocabulary section on your cards. There's also some nice card styling too (light and dark mode). The upgrade allows you to keep all your learning progress even if you have already started. 
 
@@ -256,7 +256,7 @@ The script applies this method to all the text in the card and generates a list 
 
 # Limitations
 
-While this method is not foolproof, it has proven to be highly effective in most cases. Its accuracy is largely dependent on MeCab's text parsing and the presentation of definitions on the cards. Fortunately, from the intermediate deck onward, definitions are provided in their base dictionary form, making matches relatively straightforward. However, a significant number of cards in the beginner deck feature definitions that are not in their base form, which, combined with potential discrepancies in MeCab's parsing of certain grammar points, can lead to some omissions. Despite these limitations, the method has demonstrated sufficient accuracy for the majority of cases. Considering the hundreds of hours invested in card linking for the original Jalup app, this approach represents a significant improvement.
+While this method is not foolproof, I believe it's highly effective in most cases. Its accuracy is largely dependent on MeCab's text parsing and the presentation of definitions on the cards. Fortunately, from the intermediate deck onward, definitions are provided in their base dictionary form, making matches relatively straightforward. However, a significant number of cards in the beginner deck feature definitions that are not in their base form, which, combined with potential discrepancies in MeCab's parsing of certain grammar points, can lead to some omissions. Despite these limitations, this solution has sufficient accuracy for the majority of cases. Considering the hundreds of hours invested in card linking for the original Jalup app, I think this approach represents a significant improvement.
 
 # Credits
 
