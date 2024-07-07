@@ -256,7 +256,7 @@ The script applies this method to all the text in the card and generates a list 
 
 # Limitations
 
-While this method is not foolproof, I believe it's highly effective in most cases. Its accuracy is largely dependent on MeCab's text parsing and the presentation of definitions on the cards. Fortunately, from the intermediate deck onward, definitions are provided in their base dictionary form, making matches relatively straightforward. However, a significant number of cards in the beginner deck feature definitions that are not in their base form, which, combined with potential discrepancies in MeCab's parsing of certain grammar points, can lead to some omissions. Despite these limitations, this solution has sufficient accuracy for the majority of cases. Considering the hundreds of hours invested in card linking for the original Jalup app, I think this approach represents a significant improvement.
+While this method is not foolproof, I believe it's highly effective in most cases. Its accuracy is largely dependent on MeCab's text parsing and the presentation of definitions on the cards. Fortunately, from the intermediate deck onward, definitions are provided in their base dictionary form, making matches relatively straightforward. However, a significant number of cards in the beginner deck feature definitions that are not in their base form, which, combined with potential discrepancies in MeCab's parsing of certain grammar points, can lead to some omissions. Despite these limitations, this solution has sufficient accuracy for the majority of cases. Considering the hundreds of hours invested in card linking for the original Jalup app, I think this approach represents a significant time saving improvement.
 
 # Credits
 
