@@ -130,6 +130,8 @@ Edit the Front, Back, and CSS Styling of the card. Just overwrite what is there 
   <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/de933e7c-1088-4cef-b132-13a40c2dc087" width=50% alt="Card styling">
 </p>
 
+Also, place the `_NotoSansJP-Regular.ttf` font file inside your collection.media folder. See the [Anki documentation](https://docs.ankiweb.net/files.html#file-locations) for the folder location.
+
 ### Step 8: Export Jalup Deck
 
 Export with the following options:
