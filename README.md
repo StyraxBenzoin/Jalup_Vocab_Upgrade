@@ -95,7 +95,7 @@ Create a deck called 'Jalup' with the sentence subdecks in ascending order. E.g.
 
 ### Step 3: Move Cards
 
-Move your cards to their corresponding decks.
+Move your cards to their corresponding decks. Select the cards > right click > Change Deck...
 
 ### Step 4: Create Jalup Note Type
 
