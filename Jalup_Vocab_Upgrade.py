@@ -97,7 +97,7 @@ keyword_to_definitions = {}
 def generate_vocabulary(parsed_text, current_index):
     definitions = []
     for word in parsed_text:
-        if word in keyword_to_definitions:
+        if word in keyword_to_definitions and word not in df.at[current_index, 'Keyword']:
         # Iterate over each definition in the list of definitions for a word
             for definition in keyword_to_definitions[word]:
                 definitions.append(definition)
