@@ -77,7 +77,7 @@ Unfortunately, due to the nature in which the Anki decks are supplied (inconsist
 
 ### Step 0: Backup
 
-**CREATE A BACKUP**. I will not be held responsible for data loss if mistakes are made during this process. Go to **File** > **Export** > **All Decks** and save the file to a safe location.
+**CREATE A BACKUP**. I will not be held responsible for data loss if mistakes are made during this process. Go to **File** > **Export** > **All Decks** > **check all the options to include scheduling, deck presets, and media** and save the file to a safe location.
 
 ### Step 1: Import Jalup Files
 
