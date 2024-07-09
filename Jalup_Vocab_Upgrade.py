@@ -90,32 +90,21 @@ df["Definition"] = (
 # Parse the text in 'Text to parse' and output to 'Parsed Text' column
 df["Parsed Text"] = df["Text to parse"].apply(parse_japanese_text)
 
-# Create a cumulative dictionary of keyword-to-definition mappings
-keyword_to_definition = {}
-
-# Helper function to generate vocabulary for each row based on previous rows' definitions
-def generate_vocabulary(parsed_text, current_index):
+# Iterate over the list of words in the 'Parsed Text' column and match each with 'Keyword' column, then append the related 'Definition' to 'Vocabulary'
+for i, row in df.iterrows():
     definitions = []
-    for word in parsed_text:
-        if word in keyword_to_definition:
-            definitions.append(keyword_to_definition[word])
-    return ''.join(definitions)
-
-# Vectorized approach to fill the 'Vocabulary' column. This is 560x faster than the old .iterrows() approach used previously!
-vocabularies = []
-for i in range(len(df)):
-    parsed_text = df.at[i, 'Parsed Text']
-    # Generate vocabulary using the cumulative dictionary
-    vocabulary = generate_vocabulary(parsed_text, i)
-    vocabularies.append(vocabulary)
-    # Update the cumulative dictionary with the current row's keyword and definition
-    keyword = df.at[i, 'Keyword']
-    definition = df.at[i, 'Definition']
-    if pd.notna(keyword) and pd.notna(definition):
-        keyword_to_definition[keyword] = definition
-
-df['Vocabulary'] = vocabularies
-
+    for word in row["Parsed Text"]:
+        # Exclude the keyword from the same row
+        if word == row["Keyword"]:
+            continue
+        # Find matching rows in the 'Keyword' column, only considering rows with index < i
+        matching_definitions = df.loc[df.index < i, "Definition"][
+            df.loc[df.index < i, "Keyword"] == word
+        ].tolist()
+        definitions.extend(matching_definitions)
+    # Concatenate and assign to the 'Vocabulary' column
+    df.at[i, "Vocabulary"] = "".join(definitions)
+    
 # Drop the unecessary columns we made along the way.
 # The remaining columns are in the same order as the Anki note we exported from. [Deck Name, Sentence, Explanation, Note, Media, Sentence Reading, Vocabulary]
 df = df.drop(["Keyword", "Text to parse", "Definition", "Parsed Text"], axis=1)
