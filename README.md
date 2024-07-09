@@ -77,7 +77,7 @@ Unfortunately, due to the nature in which the Anki decks are supplied (inconsist
 
 ### Step 0: Backup
 
-**CREATE A BACKUP**. I will not be held responsible for data loss if mistakes are made during this process. Go to **File** > **Export** > **All Decks** > **check all the options to include scheduling, deck presets, and media** and save the file to a safe location.
+**[CREATE A BACKUP](https://docs.ankiweb.net/backups.html#creating)**. I will not be held responsible for data loss if mistakes are made during this process. Anki makes automatic backups, but do a manual backup to be safe. Go to **File** > **Export** > **Select Deck** > **Ensure "Anki collection package (.colpkg)" is selected.** > **Enable the "include media" option.** and save the file to a safe location.
 
 ### Step 1: Import Jalup Files
 
@@ -215,7 +215,7 @@ Click Import.
   <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/61da74c0-a7c5-4a3b-9971-18a1109bf966" width=50% alt="Preview card">
 </p>
 
-Congratulations! You should now have a fancy vocab upgrade for your Jalup decks. If anything went wrong, you can restore from backup. You DID backup, right?
+Congratulations! You should now have a fancy vocab upgrade for your Jalup decks. If anything went wrong, you can [restore from backup](https://docs.ankiweb.net/backups.html).
 
 # How does it work?
 
