@@ -1,5 +1,8 @@
 <div class="box">
-
+  {{#ID}}
+  <div id="card-id">{{ID}}</div>
+  {{/ID}}
+  
   <h1>{{furigana:Sentence}}</h1>
 
 	<div class="divider"></div>
