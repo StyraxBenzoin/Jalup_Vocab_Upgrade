@@ -86,6 +86,14 @@ b {
   color: var(--vocabulary-definition-color);
 }
 
+.vocabulary-definition ruby rt {
+    visibility: hidden;
+}
+
+.vocabulary-definition ruby:hover rt {
+    visibility: visible;
+}
+
 /*
  * makes ruby text unselectable (and hence uncopyable)
  * - it makes the text unselectable, but the goal was to make the text also uncopyable
