@@ -1,6 +1,8 @@
 <div class="box">
-
+  
+  {{#ID}}
   <div id="card-id">{{ID}}</div>
+  {{/ID}}
    <h1>{{Sentence}}</h1>
 
 </div>
