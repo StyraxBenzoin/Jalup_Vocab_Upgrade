@@ -9,6 +9,8 @@
   --divider-color: #eceff1;
   --night-mode-divider-color: #7662cb;
   --vocabulary-definition-color: #83808f;
+  --bold-color: #6D4AFF;
+  --night-mode-bold-color: #00d2a7;
 }
 
 @font-face { 
@@ -35,6 +37,16 @@ h1 {
 h2 {
   font-size: 20px;
   font-weight: normal;
+}
+
+b {
+    font-weight: normal;
+    color: var(--bold-color);
+}
+
+.nightMode b {
+    font-weight: normal;
+    color: var(--night-mode-bold-color);
 }
 
 .box {
