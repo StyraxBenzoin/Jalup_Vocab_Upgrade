@@ -1,35 +1,43 @@
 <div class="box">
-  {{#ID}}
-  <div id="card-id">{{ID}}</div>
-  {{/ID}}
-  
-  <h1>{{furigana:Sentence Reading}}</h1>
+    {{#ID}}
+    <div id="card-id">{{ID}}</div>
+    {{/ID}}
+    
+    <h1>{{furigana:Sentence Reading}}</h1>
 
-	<div class="divider"></div>
+    <div class="divider"></div>
 
-	<p>
- 		{{Explanation}}
-	</p>
+    <p>
+        <div class="explanation">
+            {{#Explanation Reading}}
+                {{furigana:Explanation Reading}}
+            {{/Explanation Reading}}
+            {{^Explanation Reading}}
+                {{Explanation}}
+            {{/Explanation Reading}}
+        </div>
+    </p>
 
-	{{#Notes}}
-  	<p><div class="note">{{Notes}}</div></p>
-	{{/Notes}}
+    {{#Notes}}
+    <p>
+        <div class="note">{{Notes}}</div>
+    </p>
+    {{/Notes}}
 
-	{{Media}}
+    {{Media}}
 
 </div>
-
 
 <br />
 
 {{#Vocabulary}}
-	<div class="vocabulary box">
-  
- 	 <h2>Vocabulary</h2>
+    <div class="vocabulary box">
+    
+        <h2>Vocabulary</h2>
 
-  	<div class="divider"></div>
+        <div class="divider"></div>
 
- 	 <p>{{furigana:Vocabulary}}</p>
+        <p>{{furigana:Vocabulary}}</p>
 
-	</div>
+    </div>
 {{/Vocabulary}}
