@@ -94,6 +94,20 @@ b {
     visibility: visible;
 }
 
+.explanation {
+    font-size: ;
+    margin: 0.3em 0 0.3em 0;
+    font-family: ;
+}
+
+.explanation ruby rt {
+    opacity: 0;
+}
+
+.explanation ruby:hover rt {
+    opacity: 1;
+}
+
 /*
  * makes ruby text unselectable (and hence uncopyable)
  * - it makes the text unselectable, but the goal was to make the text also uncopyable
