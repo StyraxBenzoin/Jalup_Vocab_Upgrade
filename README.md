@@ -25,7 +25,7 @@ Here's an example screenshot in Ankidroid card browser:
 
 ### Installing Python
 
-This script is written in Python and therefore must be installed to run. The version of Python should work with any version `3.8` or greater. I have tested it with `3.8.19` and `3.12.4`. Here is a super short bullet point guide on how to install Python for Linux and Windows:
+This script is written in Python and therefore must be installed to run. The script should work with Python version `3.8` or greater. I have tested it with `3.8.19` and `3.12.4`. Here is a super short bullet point guide on how to install Python for Linux and Windows:
 
 **Linux:**
 
