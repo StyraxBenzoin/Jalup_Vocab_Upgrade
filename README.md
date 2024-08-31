@@ -87,7 +87,7 @@ New users: Import all the Jalup `.apkg` files into Anki. This will import all th
 
 ### Step 2: Create Jalup Deck
 
-Create a deck called 'Jalup' with the sentence subdecks in ascending order. E.g. 'Jalup::01 Beginner', 'Jalup::02 Intermediate', 'Jalup::03 Intermediate', etc. You will have a total of 7 subdecks. Do not include Kana Conqueror or Kanji Kingdom, etc.
+Create a deck called 'Jalup' with the sentence subdecks in ascending order. E.g. 'Jalup::01 Beginner', 'Jalup::02 Intermediate', 'Jalup::03 Advanced', etc. You will have a total of 7 subdecks. Do not include Kana Conqueror or Kanji Kingdom, etc.
 
 <p align="center">
   <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/1ee330d5-1cd3-4b49-bf1e-9c59b7890251" width=50% alt="Deck naming">
