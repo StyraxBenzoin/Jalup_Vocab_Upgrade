@@ -107,10 +107,13 @@ Make a new note type called 'Jalup' and make the following fields. Order is crit
 4. Media
 5. Sentence Reading
 6. Vocabulary
+7. ID
 
+Select the ID field and check the option to 'Sort by this field in the browser'.
 <p align="center">
   <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/7da816be-d6aa-4551-b570-62f17f7356ae" width=50% alt="Create note type">
 </p>
+ID field not pictured, image needs updating.
 
 ### Step 5: Change Note Type
 
