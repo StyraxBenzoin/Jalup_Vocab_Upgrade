@@ -119,7 +119,7 @@ ID field not pictured, image needs updating.
 
 Go to each subdeck and select all cards, change note type to the 'Jalup' note we just made. Take care to map the correct fields.
 
-**IMPORTANT**: Take extra care when changing note type of the master deck. Some cards (I believe it's the first 250 cards, stage 1) use a different note type where there is no 'Notes' field like the other cards, so select these separately when changing note type and pay attention to the field mapping.
+**IMPORTANT**: Take extra care when changing note type of the master and champion deck. Some cards use a different note type where there is no 'Notes' or 'Audio' field like the other cards, so select these separately when changing note type and pay attention to the field mapping. It may be easier to select the cards by note type from the left hand window. 
 
 <p align="center">
   <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/1d2b2556-4d11-4274-b0db-cd66caf4c53e" width=50% alt="Change note type">
