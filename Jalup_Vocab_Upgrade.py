@@ -128,12 +128,33 @@ df['Vocabulary'] = vocabularies
 df = df.drop(["Keyword", "Text to parse", "Definition", "Parsed Text"], axis=1)
 
 
+# Create an ID colum 
+# Define the ranges and corresponding suffixes
+ranges_and_suffixes = [
+    (1, 1000, 'JB'),
+    (1001, 2000, 'JI'),
+    (2001, 3000, 'JA'),
+    (3001, 4000, 'JE'),
+    (4001, 5000, 'JH'),
+    (5001, 6000, 'JM'),
+    (6001, 7000, 'JC')
+]
+
+# Generate IDs based on the defined ranges and suffixes
+# The str.zfill(4) method is used to ensure that the numbers are zero-padded to four digits.
+ids = []
+for start, end, suffix in ranges_and_suffixes:
+    ids.extend([f"{str(i).zfill(4)} - {suffix}" for i in range(start, end + 1)])
+
+# Assign the IDs to the 'ID' column in the DataFrame
+df['ID'] = ids
+
 # Make a dataframe with tags to add back in. Anki will read these on import.
 df_tags = pd.DataFrame(
     [
-        ["#separator:tab", "", "", "", "", "", ""],
-        ["#html:true", "", "", "", "", "", ""],
-        ["#deck column:1", "", "", "", "", "", ""],
+        ["#separator:tab", "", "", "", "", "", "", ""],
+        ["#html:true", "", "", "", "", "", "", ""],
+        ["#deck column:1", "", "", "", "", "", "", ""],
     ],
     columns=df.columns,
 )
