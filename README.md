@@ -158,9 +158,11 @@ Unfortunately, despite all that work, the exported file is not in deck order (an
   <img src="https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade/assets/66492803/d4a78777-6c69-4d2a-9d97-78f2c87e760a" style="width: 45%;" alt="Download as .tsv">
 </div>
 
+Alternatively, you can do the same process using Libre Office Calc or Microsoft Excel to sort the Deck Name column (ensure all adjacent columns are sorted with it). Make sure the top rows remain with the Anki # tags. Save file as `.csv`.
+
 ### Step 10: Prepare Python Script
 
-Clone this repo with in command prompt or terminal using `git clone https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade.git`, then `cd Jalup_Vocab_Upgrade` to navigate inside the directory. This is when you probably want to use a virtual environment with pyenv. Use a file explorer to move your `.tsv` file into the same folder as this python script. Open `Jalup_Vocab_Upgrade.py` in a text editor and change the string of `input_file` to match your filename. e.g. `input_file = 'myfile.tsv'`
+Clone this repo with in command prompt or terminal using `git clone https://github.com/StyraxBenzoin/Jalup_Vocab_Upgrade.git`, then `cd Jalup_Vocab_Upgrade` to navigate inside the directory. This is when you probably want to use a virtual environment with pyenv. Use a file explorer to move your `.tsv`/`.csv` file into the same folder as this python script. Open `Jalup_Vocab_Upgrade.py` in a text editor and change the string of `input_file` to match your filename. e.g. `input_file = 'myfile.tsv'`
 
 ### Step 11: Install Requirements
 
@@ -180,7 +182,7 @@ Activate your virtual environment and install the `requirements.txt`
 
 ### Step 12: Run Python Script
 
-Run the `Jalup_Vocab_Upgrade.py`. After a minute or so, a new file `myfile_Vocab_Upgrade.txt` will be written.
+Run the `Jalup_Vocab_Upgrade.py`. After a few seconds of processing, it will write a new file, e.g.  `myfile_Vocab_Upgrade.txt`.
 
 **Running a `.py` file**
 
