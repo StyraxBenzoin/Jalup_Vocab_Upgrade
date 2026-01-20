@@ -1,16 +1,28 @@
 **A better way**
 =============================================
 While this work formed the basis of my upgraded Jalup sentence decks, I have since completed all sentence decks and added _many_ corrections along the way, with even more features including:
-- insert
-- list 
-- items
 
-It would be far easier for future Jalup users to contact me (`@Benzene`) in the [Jalup Discord group](https://discord.gg/pCy8WPU), where I can provide you with my modified deck with all the above changes. (Provided you have already purchaced Jalup from Adshap before. Links to decks in Discord).
+- Added unique I.D. for card sorting
+- Card layout and styling for light and dark mode
+- Wrote a script to populate a vocabulary section of all previously defined words on the card
+- Gave definitions furigana that is made visible on mouse hover/click on mobile
+- Wrote a script to extract all keywords and make them bold on the card front. 
+- Wrote a script to get sentence pitch accent graph from [OJAD](https://www.gavo.t.u-tokyo.ac.jp/ojad/eng/phrasing/index)
+- Added keyword [pitch accent](https://ankiweb.net/shared/info/148002038)
+- Used [local audio server](https://github.com/yomidevs/local-audio-yomichan) and the [generate batch audio](https://github.com/DillonWall/generate-batch-audio-anki-addon) add-on to add word audio.
+- Used [Voicepeak](https://www.ah-soft.com/voice/6nare) to generate missing sentence audio that wasn't completed in the Master and Champion decks
+- Made a **lot** of manual corrections the above where it wasn't possible to do automatically.
+
+![Card Preview](https://raw.githubusercontent.com/StyraxBenzoin/Jalup_Vocab_Upgrade/refs/heads/main/Jalup_Benzene_Mod_Preview.gif)
+
+Rather than duplicate work, it would be far easier for future Jalup users to contact me (`@Benzene`) in the [Jalup Discord group](https://discord.gg/pCy8WPU), where I can provide you with my modified deck with all the above changes. (Provided you have already purchaced Jalup from Adshap before. Links to decks in Discord).
 
 While the instructions in this repo will still work, it will still fall very short of where I have taken it now.
 
 Original documentation below.
+
 ___
+
 
 **Japanese Level Up Maximum Package Vocabulary Upgrade**
 =============================================
