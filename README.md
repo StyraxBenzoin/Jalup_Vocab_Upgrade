@@ -1,4 +1,4 @@
-**A better way**
+**A Better Way**
 =============================================
 While this work formed the basis of my upgraded Jalup sentence decks, I have since completed all sentence decks and added _many_ corrections along the way, with even more features including:
 
