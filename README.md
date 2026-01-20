@@ -13,7 +13,9 @@ While this work formed the basis of my upgraded Jalup sentence decks, I have sin
 - Used [Voicepeak](https://www.ah-soft.com/voice/6nare) to generate missing sentence audio that wasn't completed in the Master and Champion decks
 - Made a **lot** of manual corrections the above where it wasn't possible to do automatically.
 
-![Card Preview](https://raw.githubusercontent.com/StyraxBenzoin/Jalup_Vocab_Upgrade/refs/heads/main/Jalup_Benzene_Mod_Preview.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/StyraxBenzoin/Jalup_Vocab_Upgrade/refs/heads/main/Jalup_Benzene_Mod_Preview.gif" width="500">
+</p>
 
 Rather than duplicate work, it would be far easier for future Jalup users to contact me (`@Benzene`) in the [Jalup Discord group](https://discord.gg/pCy8WPU), where I can provide you with my modified deck with all the above changes. (Provided you have already purchaced Jalup from Adshap before. Links to decks in Discord).
 
