@@ -1,3 +1,17 @@
+**A better way**
+=============================================
+While this work formed the basis of my upgraded Jalup sentence decks, I have since completed all sentence decks and added _many_ corrections along the way, with even more features including:
+- insert
+- list 
+- items
+
+It would be far easier for future Jalup users to contact me (`@Benzene`) in the [Jalup Discord group](https://discord.gg/pCy8WPU), where I can provide you with my modified deck with all the above changes. (Provided you have already purchaced Jalup from Adshap before. Links to decks in Discord).
+
+While the instructions in this repo will still work, it will still fall very short of where I have taken it now.
+
+Original documentation below.
+___
+
 **Japanese Level Up Maximum Package Vocabulary Upgrade**
 =============================================
 
