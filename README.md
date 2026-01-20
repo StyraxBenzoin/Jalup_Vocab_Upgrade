@@ -6,7 +6,8 @@ While this work formed the basis of my upgraded Jalup sentence decks, I have sin
 - Card layout and styling for light and dark mode
 - Wrote a script to populate a vocabulary section of all previously defined words on the card
 - Gave definitions furigana that is made visible on mouse hover/click on mobile
-- Wrote a script to extract all keywords and make them bold on the card front. 
+- Wrote a script to extract all keywords and make them bold on the card front.
+- Populated a `Word` field for the target word which allows for duplicate detection when using Yomitan extension. 
 - Wrote a script to get sentence pitch accent graph from [OJAD](https://www.gavo.t.u-tokyo.ac.jp/ojad/eng/phrasing/index)
 - Added keyword [pitch accent](https://ankiweb.net/shared/info/148002038)
 - Used [local audio server](https://github.com/yomidevs/local-audio-yomichan) and the [generate batch audio](https://github.com/DillonWall/generate-batch-audio-anki-addon) add-on to add word audio.
